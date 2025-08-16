@@ -13,6 +13,7 @@ pipeline {
                     serverUrl: 'https://AA26CC3CDF6B2959EB3BA21B89AB9FFA.gr7.ap-south-1.eks.amazonaws.com'
                 ]]) {
                     sh "kubectl apply -f deployment-service.yml"
+		    sleep 60
                 }
             }
         }
